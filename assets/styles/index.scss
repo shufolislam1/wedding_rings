@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "mreaves-bold";
+    src: url("../fonts/MrEavesXLModOT-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "mreaves-book";
+    src: url("../fonts/MrEavesXLModOT-Book.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "mreaves-light";
+    src: url("../fonts/MrEavesXLModOT-Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "mreaves-regular";
+    src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("truetype");
+  }
+
+body{
+    max-width: 1440px;
+    font-family: mreaves-regular;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+}
+.parent{
+    margin-top: 10px;
+    border-top: 1px solid pink;
+}
+.container{
+    display: flex;
+    // max-width: 1280px;
+    .left-side{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .row-container{
+            display: flex;
+            // flex-direction: row;
+        // flex-wrap: wrap;
+
+        }
+    }
+    .right-side{
+        width: 100%;
+    }
+}
+.fa-heart{
+    color: pink;
+}
+.full-img-card {
+    border: 4px solid #fff;
+    padding: 10px;
+    .main-img {
+        // i{
+        //     opacity: 0;
+        // }
+        position: relative;
+        width: 200px; // Adjust the width as needed
+        height: 200px; // Adjust the height as needed
+
+        // display: block;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // transition: opacity 0.5s ease;
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+        }
+    }
+
+    // Default border
+    border: none;
+    
+    &:hover {
+        // Change the border color on hover
+        border: 4px solid pink;
+
+        .main-img {
+            img:nth-child(1) {
+                opacity: 0;
+            }
+
+            img:nth-child(2) {
+                opacity: 1;
+            }
+            i{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0px;
+            height: 0px;
+            object-fit: cover;
+            }
+        }
+    }
+    .description{
+        font-size: 17px;
+        text-align: center;
+        color: black;
+    }
+    .ring-type{
+        font-size: 12px;
+        font-weight: 100;
+        text-align: center;
+        color: black;
+    }
+    .old-price{
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        color: black;
+    }
+}
+
