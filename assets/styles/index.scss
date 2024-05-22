@@ -32,6 +32,60 @@ body{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        .parent-filter{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            .filter{
+                align-items: center;
+                background: #fff;
+                border-bottom: 1px solid #000;
+                border-right: 1px solid #000;
+                display: flex;
+                justify-content: center;
+                padding: 15px 5px;
+                position: static;
+                .filter-container{
+                    position: relative;
+                    padding-left: 16px;
+                    padding-right: 10px;
+                    .icon-container{
+                        top: 0;
+                        left: 0;
+                        position: relative;
+                        font-size: 12px;
+                        margin: auto;
+                        color: #000;
+                    }
+                }
+                .filter-container2{
+                    background: #fff;
+                    border: 1px solid #000;
+                    border-top: none;
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    z-index: 1;
+                    ul{
+                        display: flex;
+                        font-family: mreaves-book;
+                        justify-content: space-around;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+            >div{
+                font-size: 18px;
+                padding: 0;
+                text-transform: uppercase;
+
+            }
+        }
         .essential{
             .result{
                 padding: 10px;
