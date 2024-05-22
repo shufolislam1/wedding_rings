@@ -32,6 +32,38 @@ body{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        .essential{
+            .result{
+                padding: 10px;
+            }
+            margin-top: 5px;
+            display: flex;
+            width: 100%;
+            .search{
+                margin-left: auto;
+                width: auto;
+                .input-container {
+                    position: relative;
+                    width: 100%;
+                    input {
+                        padding: 5px;
+                        width: 75%;
+                        padding-right: 30px;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        margin: 0 20px;
+                    }
+                
+                    i {
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                    }
+                }                
+            }
+        }
         .row-container{
             display: flex;
         }

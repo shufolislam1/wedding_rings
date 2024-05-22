@@ -35,6 +35,37 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
+.container .left-side .essential {
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+}
+.container .left-side .essential .result {
+  padding: 10px;
+}
+.container .left-side .essential .search {
+  margin-left: auto;
+  width: auto;
+}
+.container .left-side .essential .search .input-container {
+  position: relative;
+  width: 100%;
+}
+.container .left-side .essential .search .input-container input {
+  padding: 5px;
+  width: 75%;
+  padding-right: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 0 20px;
+}
+.container .left-side .essential .search .input-container i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
 .container .left-side .row-container {
   display: flex;
 }
