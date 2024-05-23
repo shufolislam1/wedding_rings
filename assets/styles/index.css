@@ -37,26 +37,20 @@ body {
 }
 .container .left-side .parent-filter {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid black;
 }
-.container .left-side .parent-filter .filter {
-  align-items: center;
-  background: #fff;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
-  display: flex;
-  justify-content: center;
+.container .left-side .parent-filter div {
+  border-right: 1px solid black;
   padding: 15px 5px;
-  position: static;
-}
-.container .left-side .parent-filter .filter .filter-container {
+  margin-right: 10px;
   position: relative;
-  padding-left: 16px;
-  padding-right: 10px;
 }
-.container .left-side .parent-filter .filter .filter-container .icon-container {
+.container .left-side .parent-filter div i {
   top: 0;
   left: 0;
   position: relative;
@@ -64,29 +58,29 @@ body {
   margin: auto;
   color: #000;
 }
-.container .left-side .parent-filter .filter .filter-container2 {
-  background: #fff;
-  border: 1px solid #000;
-  border-top: none;
+.container .left-side .parent-filter div:hover .dropdown-options {
+  display: flex;
+}
+.container .left-side .parent-filter .dropdown-options {
   display: none;
   position: absolute;
-  left: 0;
   top: 100%;
-  width: 100%;
-  z-index: 1;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid black;
+  border-top: none;
+  padding: 10px;
 }
-.container .left-side .parent-filter .filter .filter-container2 ul {
+.container .left-side .parent-filter .dropdown-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   font-family: mreaves-book;
   justify-content: space-around;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
-.container .left-side .parent-filter > div {
-  font-size: 18px;
-  padding: 0;
-  text-transform: uppercase;
+.container .left-side .parent-filter .dropdown-options li {
+  margin-right: 20px;
 }
 .container .left-side .essential {
   margin-top: 10px;
@@ -106,7 +100,6 @@ body {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   width: 100%;
 }
 .container .left-side .essential .search .input-container > input {

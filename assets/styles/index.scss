@@ -34,56 +34,53 @@ body{
         width: 100%;
         .parent-filter{
             display: flex;
+            justify-content: space-between;
             flex-wrap: wrap;
+            width: 100%;
             margin: 0;
             padding: 0;
-            .filter{
-                align-items: center;
-                background: #fff;
-                border-bottom: 1px solid #000;
-                border-right: 1px solid #000;
-                display: flex;
-                justify-content: center;
+            border-bottom: 1px solid black;
+            div {
+                border-right: 1px solid black;
                 padding: 15px 5px;
-                position: static;
-                .filter-container{
-                    position: relative;
-                    padding-left: 16px;
-                    padding-right: 10px;
-                    .icon-container{
-                        top: 0;
-                        left: 0;
-                        position: relative;
-                        font-size: 12px;
-                        margin: auto;
-                        color: #000;
-                    }
-                }
-                .filter-container2{
-                    background: #fff;
-                    border: 1px solid #000;
-                    border-top: none;
-                    display: none;
-                    position: absolute;
+                margin-right: 10px;
+                position: relative;
+                i {
+                    top: 0;
                     left: 0;
-                    top: 100%;
-                    width: 100%;
-                    z-index: 1;
-                    ul{
-                        display: flex;
-                        font-family: mreaves-book;
-                        justify-content: space-around;
-                        list-style: none;
-                        margin: 0;
-                        padding: 0;
-                    }
+                    position: relative;
+                    font-size: 12px;
+                    margin: auto;
+                    color: #000;
+                }
+        
+                &:hover .dropdown-options {
+                    display: flex;
                 }
             }
-            >div{
-                font-size: 18px;
-                padding: 0;
-                text-transform: uppercase;
-
+        
+            .dropdown-options {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                border: 1px solid black;
+                border-top: none;
+                padding: 10px;
+        
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    font-family: mreaves-book;
+                    justify-content: space-around;
+                }
+        
+                li {
+                    margin-right: 20px;
+                }
             }
         }
         .essential{
@@ -102,7 +99,7 @@ body{
                     align-items: stretch;
                     display: flex;
                     flex-wrap: wrap;
-                    position: relative;
+                    // position: relative;
                     width: 100%;
                     >input{
                         border: none;
@@ -206,8 +203,6 @@ body{
             position: absolute;
             top: 0;
             right: 0;
-            // width: 0px;
-            // height: 0px;
             object-fit: cover;
             }
         }
