@@ -26,4 +26,12 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+.right-part {
+  display: flex;
+}
+.right-part .first .gurranty img {
+  width: 150px;
+  padding: 10px 0;
 }/*# sourceMappingURL=details.css.map */

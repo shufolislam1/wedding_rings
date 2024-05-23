@@ -27,3 +27,14 @@ body{
     justify-content: space-around;
     width: 100%;
 }
+.right-part{
+  display: flex;
+  .first{
+    .gurranty{
+      img{
+        width: 150px;
+        padding: 10px 0;
+      }
+    }
+  }
+}
