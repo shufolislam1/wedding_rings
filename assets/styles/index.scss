@@ -40,23 +40,29 @@ body{
             margin: 0;
             padding: 0;
             border-bottom: 1px solid black;
-            // &:hover .parent-filter{
-
-            //     border-bottom: none;
-            // }
-            div {
+            >div {
                 // border-bottom: 1px solid black;
                 border-right: 1px solid black;
-                padding: 15px 5px;
-                // margin-right: 10px;
+                padding: 15px 0px;
                 position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;
                 i {
-                    top: 0;
-                    left: 0;
                     position: relative;
                     font-size: 12px;
-                    margin: auto;
                     color: #000;
+                }
+
+                .fa-circle-info {
+                    position: absolute;
+                    left: 0;
+                }
+        
+                .fa-angle-down {
+                    position: absolute;
+                    right: 0;
                 }
         
                 &:hover .dropdown-options {
@@ -93,7 +99,7 @@ body{
             .result{
                 padding: 10px;
             }
-            margin-top: 10px;
+            margin-top: 15px;
             display: flex;
             width: 100%;
             .search{
@@ -135,6 +141,7 @@ body{
         .row-container{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            margin-top: 7px;
         }
     }
     .right-side{
@@ -160,7 +167,11 @@ body{
             border-right: 35px solid pink;
             border-top: 35px solid transparent;
             border-bottom: 35px solid transparent;
-            position: sticky;
+            // position: sticky;
+            // top: 0;
+            position: relative;
+            // bottom: 3.2%;
+            bottom: 111px;
             padding-right: 64px;
         }
     }

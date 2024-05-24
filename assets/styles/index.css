@@ -44,20 +44,29 @@ body {
   padding: 0;
   border-bottom: 1px solid black;
 }
-.container .left-side .parent-filter div {
+.container .left-side .parent-filter > div {
   border-right: 1px solid black;
-  padding: 15px 5px;
+  padding: 15px 0px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
-.container .left-side .parent-filter div i {
-  top: 0;
-  left: 0;
+.container .left-side .parent-filter > div i {
   position: relative;
   font-size: 12px;
-  margin: auto;
   color: #000;
 }
-.container .left-side .parent-filter div:hover .dropdown-options {
+.container .left-side .parent-filter > div .fa-circle-info {
+  position: absolute;
+  left: 0;
+}
+.container .left-side .parent-filter > div .fa-angle-down {
+  position: absolute;
+  right: 0;
+}
+.container .left-side .parent-filter > div:hover .dropdown-options {
   display: flex;
 }
 .container .left-side .parent-filter .dropdown-options {
@@ -83,7 +92,7 @@ body {
   margin-right: 20px;
 }
 .container .left-side .essential {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   width: 100%;
 }
@@ -127,6 +136,7 @@ body {
 .container .left-side .row-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 7px;
 }
 .container .right-side {
   width: 100%;
@@ -152,7 +162,8 @@ body {
   border-right: 35px solid pink;
   border-top: 35px solid transparent;
   border-bottom: 35px solid transparent;
-  position: sticky;
+  position: relative;
+  bottom: 111px;
   padding-right: 64px;
 }
 
