@@ -133,8 +133,8 @@ body{
             }
         }
         .row-container{
-            display: flex;
-            margin: 5px 0px 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
     .right-side{
