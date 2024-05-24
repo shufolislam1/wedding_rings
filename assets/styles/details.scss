@@ -23,18 +23,58 @@ body{
     padding: 0;
 }
 .main{
-    display: flex;
-    justify-content: space-around;
     width: 100%;
 }
 .right-part{
   display: flex;
   .first{
+    position: relative;
+    padding: 15px 10px;
     .gurranty{
       img{
         width: 150px;
-        padding: 10px 0;
+        padding: 15px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
       }
     }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+
+      .video-management {
+        position: absolute;
+        bottom: 0; /* Adjust as needed */
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        .pause-button img {
+          width: 25px; /* Adjust as needed */
+          height: auto;
+      }
+    }
+  }
+  .description{
+    display: flex;
+    >div{
+      display: flex;
+      flex-direction: column;
+      font-family: mreaves-regular;
+      font-size: 19px;
+      width: 40%;
+      .mini-description{
+        font-size: 15px;
+      }
+    }
+  }
+  .price{
+      font-family: mreaves-bold;
+      font-size: 22px;
+  }
   }
 }
