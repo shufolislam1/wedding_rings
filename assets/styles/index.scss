@@ -49,8 +49,9 @@ body{
                 align-items: center;
                 justify-content: center;
                 flex-grow: 1;
+                
                 i {
-                    position: relative;
+                    // position: relative;
                     font-size: 12px;
                     color: #000;
                 }
@@ -69,12 +70,16 @@ body{
                     display: flex;
                 }
             }
+            :nth-child(4){
+                border-right: none;
+            }
         
             .dropdown-options {
                 display: none;
                 position: absolute;
                 top: 100%;
                 // width: 100%;
+                // width: max-content;
                 left: 0;
                 background-color: #fff;
                 border: 1px solid black;
@@ -171,8 +176,8 @@ body{
             // top: 0;
             position: fixed;
             // bottom: 3.2%;
-            bottom: 57%;
-            padding-right: 64px;
+            bottom: 56%;
+            padding-right: 66px;
         }
     }
 }

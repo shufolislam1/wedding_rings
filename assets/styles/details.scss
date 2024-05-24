@@ -25,8 +25,15 @@ body{
 .main{
     width: 100%;
 }
-.right-part{
+.main-part{
+  .parent{
+    display: block;
+    max-width: 600px;
+    padding: 0 100px 0 20px;
+  }
   display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
   .first{
     position: relative;
     padding: 15px 10px;
@@ -76,5 +83,11 @@ body{
       font-family: mreaves-bold;
       font-size: 22px;
   }
+  }
+  .second{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 65px;
   }
 }
