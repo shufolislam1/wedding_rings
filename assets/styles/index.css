@@ -162,8 +162,8 @@ body {
   border-right: 35px solid pink;
   border-top: 35px solid transparent;
   border-bottom: 35px solid transparent;
-  position: relative;
-  bottom: 111px;
+  position: fixed;
+  bottom: 57%;
   padding-right: 64px;
 }
 
