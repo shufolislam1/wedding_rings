@@ -36,14 +36,15 @@ body{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            width: 100%;
+            // width: 100%;
             margin: 0;
             padding: 0;
-            border-bottom: 1px solid black;
+            // border-bottom: 1px solid black;
             div {
+                border-bottom: 1px solid black;
                 border-right: 1px solid black;
                 padding: 15px 5px;
-                margin-right: 10px;
+                // margin-right: 10px;
                 position: relative;
                 i {
                     top: 0;
