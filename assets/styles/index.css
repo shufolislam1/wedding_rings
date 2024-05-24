@@ -39,11 +39,12 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid black;
 }
 .container .left-side .parent-filter div {
-  border-bottom: 1px solid black;
   border-right: 1px solid black;
   padding: 15px 5px;
   position: relative;
@@ -68,6 +69,7 @@ body {
   border: 1px solid black;
   border-top: none;
   padding: 10px;
+  z-index: 1;
 }
 .container .left-side .parent-filter .dropdown-options ul {
   list-style: none;
