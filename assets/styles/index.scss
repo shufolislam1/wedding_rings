@@ -238,10 +238,10 @@ body{
                     }
                   }
                 }
-                .description{
+                .side-description{
                   display: flex;
                   >div{
-                    display: flex;
+                    // display: flex;
                     flex-direction: column;
                     font-family: mreaves-regular;
                     font-size: 19px;
@@ -272,6 +272,63 @@ body{
                       width: auto;
                       padding: 16px 14px;
                     }
+                  }
+                  .image-tooltip{
+                    cursor: pointer;
+                    position: relative;
+                    float: left;
+                    .after-hover{
+                        background-color: white;
+                        display: flex;
+                        position: absolute;
+                        right: 70px;
+                        top: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+                        z-index: 1;
+                        img{
+                            display: block;
+                            overflow: hidden;
+                            width: 60px;
+                            // border: 1px solid pink;
+                        }
+                    }
+                    .before-hover{
+                        display: flex;
+                    }
+                    .fa-less-than{
+                        margin-top:27px;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                    &:hover {
+                        .after-hover {
+                          visibility: visible;
+                          opacity: 1;
+                          transition-delay: 0s;
+                        }
+                      }
+                  }
+                  .type-tooltip{
+                    position: relative;
+                    .metal-type{
+                        border-radius: 50%;
+                        background-color: #dedede;
+                        border-color: #dedede;
+                        text-align: center;
+                        // align-items: center;
+                        font-size: 15px;
+                        height: 40px;
+                        margin: auto;
+                        font-family: mreaves-book;
+                    }
+                    // .metal-name{
+                    //     // margin-top: 200px;
+                    // }
+                    // .upper-initial{
+                    //     display: flex;
+                    // }
                   }
                 }
               }

@@ -218,17 +218,16 @@ body {
   width: 25px; /* Adjust as needed */
   height: auto;
 }
-.container .right-side .after-click .main-part .first .description {
+.container .right-side .after-click .main-part .first .side-description {
   display: flex;
 }
-.container .right-side .after-click .main-part .first .description > div {
-  display: flex;
+.container .right-side .after-click .main-part .first .side-description > div {
   flex-direction: column;
   font-family: mreaves-regular;
   font-size: 19px;
   width: 40%;
 }
-.container .right-side .after-click .main-part .first .description > div .mini-description {
+.container .right-side .after-click .main-part .first .side-description > div .mini-description {
   font-size: 15px;
 }
 .container .right-side .after-click .main-part .first .price {
@@ -250,6 +249,53 @@ body {
   left: 0;
   width: auto;
   padding: 16px 14px;
+}
+.container .right-side .after-click .main-part .second .image-tooltip {
+  cursor: pointer;
+  position: relative;
+  float: left;
+}
+.container .right-side .after-click .main-part .second .image-tooltip .after-hover {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  right: 70px;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+  z-index: 1;
+}
+.container .right-side .after-click .main-part .second .image-tooltip .after-hover img {
+  display: block;
+  overflow: hidden;
+  width: 60px;
+}
+.container .right-side .after-click .main-part .second .image-tooltip .before-hover {
+  display: flex;
+}
+.container .right-side .after-click .main-part .second .image-tooltip .fa-less-than {
+  margin-top: 27px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.container .right-side .after-click .main-part .second .image-tooltip:hover .after-hover {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.container .right-side .after-click .main-part .second .type-tooltip {
+  position: relative;
+}
+.container .right-side .after-click .main-part .second .type-tooltip .metal-type {
+  border-radius: 50%;
+  background-color: #dedede;
+  border-color: #dedede;
+  text-align: center;
+  font-size: 15px;
+  height: 40px;
+  margin: auto;
+  font-family: mreaves-book;
 }
 
 .fa-heart {
