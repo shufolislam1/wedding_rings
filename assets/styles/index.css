@@ -147,12 +147,7 @@ body {
 .container .right-side {
   width: 100%;
 }
-.container .right-side .before-click {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.container .right-side .before-click .text {
+.container .right-side > h1 {
   border: 1px solid black;
   font-family: mreaves-book;
   padding: 75px 25px 15px;
@@ -169,7 +164,7 @@ body {
   background-color: white;
   z-index: 1;
 }
-.container .right-side .before-click .triangle {
+.container .right-side .triangle {
   height: 0;
   width: 0;
   border-right: 35px solid pink;
