@@ -240,16 +240,101 @@ body{
                 }
                 .side-description{
                   display: flex;
-                  >div{
+                  margin: 12px 0px;
+                  .full-description{
                     // display: flex;
                     flex-direction: column;
                     font-family: mreaves-regular;
                     font-size: 19px;
                     width: 40%;
                     .mini-description{
-                      font-size: 15px;
+                      font-size: 14px;
                     }
                   }
+                  .price{
+                    display: flex;
+                    // flex-direction: end;
+                    margin-top: auto;
+                    margin-left: auto;
+                    margin-right: 38px;
+                  }
+                }
+                .line{
+                    border-bottom: 1px solid pink;
+                }
+                .options{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 12px;
+                    i{
+                        color: pink;
+                    }
+                    .fa-circle-question{
+                        color: black;
+                    }
+                    .first-options{
+                        img{
+                            width: 15px;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                .size-part{
+                    margin-top: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: fit-content;
+                    border-bottom: 1px solid black;
+                    .size-part-text{
+                        font-size: 20px;
+                    }
+                    .arrow-down{
+                        margin-left: 112px;
+                        img{
+                            width: 50%;
+                        }
+                    }
+                }
+                .size-extra{
+                    margin-top: 6px;
+                    .bold-size{
+                        font-family: mreaves-bold;
+                        font-size: 17px;
+                    }
+                    .small-size{
+                        font-size: 14px;
+                    }
+                }
+                .additional-description{
+                    margin: 12px 0px;
+                    .fa-square-plus{
+                        font-weight: 900;
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
+                }
+                .lower-div{
+                    .lower-button{
+                        background-color: black;
+                        color: white;
+                        border: none;
+                        width: 80%;
+                        padding: 10px 25px;
+                        font-size: 18px;
+                        cursor: pointer;
+                        // font-family: mreaves-bold;
+                    }
+                    .fa-heart{
+                        color: white;
+                        background-color: #000;
+                        font-size: 20px;
+                        padding: 10px;
+                        cursor: pointer;
+                        // margin-top: 10px;
+                        // height: 100%;
+                        // width: 100%;
+                    }
                 }
                 .price{
                     font-family: mreaves-bold;

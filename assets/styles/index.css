@@ -220,15 +220,92 @@ body {
 }
 .container .right-side .after-click .main-part .first .side-description {
   display: flex;
+  margin: 12px 0px;
 }
-.container .right-side .after-click .main-part .first .side-description > div {
+.container .right-side .after-click .main-part .first .side-description .full-description {
   flex-direction: column;
   font-family: mreaves-regular;
   font-size: 19px;
   width: 40%;
 }
-.container .right-side .after-click .main-part .first .side-description > div .mini-description {
-  font-size: 15px;
+.container .right-side .after-click .main-part .first .side-description .full-description .mini-description {
+  font-size: 14px;
+}
+.container .right-side .after-click .main-part .first .side-description .price {
+  display: flex;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 38px;
+}
+.container .right-side .after-click .main-part .first .line {
+  border-bottom: 1px solid pink;
+}
+.container .right-side .after-click .main-part .first .options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.container .right-side .after-click .main-part .first .options i {
+  color: pink;
+}
+.container .right-side .after-click .main-part .first .options .fa-circle-question {
+  color: black;
+}
+.container .right-side .after-click .main-part .first .options .first-options img {
+  width: 15px;
+  margin-left: 3px;
+}
+.container .right-side .after-click .main-part .first .size-part {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid black;
+}
+.container .right-side .after-click .main-part .first .size-part .size-part-text {
+  font-size: 20px;
+}
+.container .right-side .after-click .main-part .first .size-part .arrow-down {
+  margin-left: 112px;
+}
+.container .right-side .after-click .main-part .first .size-part .arrow-down img {
+  width: 50%;
+}
+.container .right-side .after-click .main-part .first .size-extra {
+  margin-top: 6px;
+}
+.container .right-side .after-click .main-part .first .size-extra .bold-size {
+  font-family: mreaves-bold;
+  font-size: 17px;
+}
+.container .right-side .after-click .main-part .first .size-extra .small-size {
+  font-size: 14px;
+}
+.container .right-side .after-click .main-part .first .additional-description {
+  margin: 12px 0px;
+}
+.container .right-side .after-click .main-part .first .additional-description .fa-square-plus {
+  font-weight: 900;
+  font-size: 24px;
+  cursor: pointer;
+}
+.container .right-side .after-click .main-part .first .lower-div .lower-button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 80%;
+  padding: 10px 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container .right-side .after-click .main-part .first .lower-div .fa-heart {
+  color: white;
+  background-color: #000;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
 }
 .container .right-side .after-click .main-part .first .price {
   font-family: mreaves-bold;
