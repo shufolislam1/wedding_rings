@@ -74,14 +74,14 @@ body {
   border-right: none;
 }
 .container .left-side .parent-filter .dropdown-options {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
   border: 1px solid black;
+  display: none;
   border-top: none;
   padding: 10px;
+  background-color: #fff;
   z-index: 1;
 }
 .container .left-side .parent-filter .dropdown-options ul {
@@ -118,7 +118,6 @@ body {
 .container .left-side .essential .search .input-container > input {
   border: none;
   outline: none;
-  border-radius: 0;
   height: 25px;
   padding: 0;
 }
@@ -142,16 +141,24 @@ body {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 7px;
 }
+.container .left-side .row-container a {
+  text-decoration: none;
+}
 .container .right-side {
   width: 100%;
 }
-.container .right-side > h1 {
+.container .right-side .before-click {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container .right-side .before-click .text {
   border: 1px solid black;
   font-family: mreaves-book;
   padding: 75px 25px 15px;
   font-size: 50px;
   position: sticky;
-  top: 0px;
+  top: 10px;
   text-align: center;
   width: 50%;
   margin-top: 0;
@@ -159,8 +166,10 @@ body {
   font-weight: 500;
   height: 300px;
   line-height: 46px;
+  background-color: white;
+  z-index: 1;
 }
-.container .right-side .triangle {
+.container .right-side .before-click .triangle {
   height: 0;
   width: 0;
   border-right: 35px solid pink;
@@ -170,16 +179,89 @@ body {
   bottom: 56%;
   padding-right: 65px;
 }
+.container .right-side .after-click {
+  display: none;
+}
+.container .right-side .after-click .main-part {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container .right-side .after-click .main-part .lower-parent {
+  display: block;
+  max-width: 600px;
+  padding: 0 100px 0 20px;
+}
+.container .right-side .after-click .main-part .first {
+  position: relative;
+  padding: 15px 10px;
+}
+.container .right-side .after-click .main-part .first .gurranty img {
+  width: 150px;
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.container .right-side .after-click .main-part .first .video-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.container .right-side .after-click .main-part .first .video-container .video-management {
+  position: absolute;
+  bottom: 0; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.container .right-side .after-click .main-part .first .video-container .video-management .pause-button img {
+  width: 25px; /* Adjust as needed */
+  height: auto;
+}
+.container .right-side .after-click .main-part .first .description {
+  display: flex;
+}
+.container .right-side .after-click .main-part .first .description > div {
+  display: flex;
+  flex-direction: column;
+  font-family: mreaves-regular;
+  font-size: 19px;
+  width: 40%;
+}
+.container .right-side .after-click .main-part .first .description > div .mini-description {
+  font-size: 15px;
+}
+.container .right-side .after-click .main-part .first .price {
+  font-family: mreaves-bold;
+  font-size: 22px;
+}
+.container .right-side .after-click .main-part .second {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 65px;
+}
+.container .right-side .after-click .main-part .second .video-tooltip .product-img {
+  width: 100%;
+}
+.container .right-side .after-click .main-part .second .video-tooltip .product-svg {
+  position: absolute;
+  top: 0;
+  padding: 16px 14px;
+}
 
 .fa-heart {
   color: pink;
 }
 
 .full-img-card {
+  display: block;
   border: 4px solid #fff;
   padding: 10px;
   color: black;
-  display: block;
   height: 100%;
   box-sizing: border-box;
 }
