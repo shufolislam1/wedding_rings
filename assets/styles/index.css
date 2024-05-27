@@ -70,17 +70,23 @@ body {
 .container .left-side .parent-filter > div:hover {
   border-bottom: none;
 }
-.container .left-side .parent-filter :nth-child(4) {
+.container .left-side .parent-filter > div:nth-child(4) {
   border-right: none;
+}
+.container .left-side .parent-filter > div:nth-child(3) .dropdown-options, .container .left-side .parent-filter > div:nth-child(4) .dropdown-options {
+  right: 0;
+  left: auto;
 }
 .container .left-side .parent-filter .dropdown-options {
   position: absolute;
   top: 100%;
+  width: -moz-max-content;
+  width: max-content;
   left: 0;
   border: 1px solid black;
   display: none;
   border-top: none;
-  padding: 10px;
+  padding: 20px;
   background-color: #fff;
   z-index: 1;
 }
@@ -190,7 +196,7 @@ body {
 }
 .container .right-side .after-click .main-part .first {
   position: relative;
-  padding: 0px 15px;
+  padding: 0px 28px;
 }
 .container .right-side .after-click .main-part .first .gurranty img {
   width: 150px;
@@ -209,13 +215,13 @@ body {
 }
 .container .right-side .after-click .main-part .first .video-container .video-management {
   position: absolute;
-  bottom: 0; /* Adjust as needed */
+  bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
 }
 .container .right-side .after-click .main-part .first .video-container .video-management .pause-button img {
-  width: 25px; /* Adjust as needed */
+  width: 25px;
   height: auto;
 }
 .container .right-side .after-click .main-part .first .side-description {
@@ -284,6 +290,7 @@ body {
   font-size: 14px;
 }
 .container .right-side .after-click .main-part .first .additional-description {
+  text-align: justify;
   margin: 12px 0px;
 }
 .container .right-side .after-click .main-part .first .additional-description .fa-square-plus {
@@ -291,11 +298,16 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
+.container .right-side .after-click .main-part .first .lower-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
 .container .right-side .after-click .main-part .first .lower-div .lower-button {
   background-color: black;
   color: white;
   border: none;
-  width: 80%;
+  width: 92%;
   padding: 10px 25px;
   font-size: 18px;
   cursor: pointer;
@@ -312,6 +324,7 @@ body {
   font-size: 22px;
 }
 .container .right-side .after-click .main-part .second {
+  padding-right: inherit;
   position: absolute;
   right: 0;
   top: 20px;
