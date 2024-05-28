@@ -163,6 +163,7 @@ body{
     .right-side{
         width: 100%;
             >h1{
+                position: relative;
                 border: 1px solid black;
                 font-family: mreaves-book;
                 padding: 75px 25px 15px;
@@ -180,14 +181,17 @@ body{
                 z-index: 1;
             }
             .triangle{
+                position: absolute;
                 height: 0;
                 width: 0;
                 border-right: 35px solid pink;
                 border-top: 35px solid transparent;
                 border-bottom: 35px solid transparent;
-                position: fixed;
-                bottom: 56%;
-                padding-right: 65px;
+                // position: fixed;
+                // bottom: 56%;
+                // padding-right: 65px;
+                left: -36px;
+                bottom: 0px;
             }
         .after-click{
             display: none;
@@ -411,6 +415,7 @@ body{
     color: pink;
 }
 .full-img-card {
+    cursor: pointer;
     display: block;
     border: 4px solid #fff;
     padding: 10px;
